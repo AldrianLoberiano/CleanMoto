@@ -88,3 +88,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         $appointments = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
     } catch (PDOException $e) {
+        echo json_encode(['success' => false, 'message' => 'Database error']);
