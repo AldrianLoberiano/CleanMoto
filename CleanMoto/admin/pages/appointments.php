@@ -91,3 +91,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         echo json_encode(['success' => false, 'message' => 'Database error']);
         exit;
     }
+    
