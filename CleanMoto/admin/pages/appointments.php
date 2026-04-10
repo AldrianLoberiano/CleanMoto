@@ -70,3 +70,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         while ($row = $countStmt->fetch()) {
             $statusCounts[$row['status']] = $row['count'];
             $statusCounts['all'] += $row['count'];
+        }
