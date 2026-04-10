@@ -17,3 +17,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     header('Content-Type: application/json');
     
     // Get filter parameters
+    $periodFilter = $_GET['period'] ?? 'all';
