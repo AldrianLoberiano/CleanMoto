@@ -72,3 +72,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
             $statusCounts['all'] += $row['count'];
         }
         
+        // Fetch filtered appointments
