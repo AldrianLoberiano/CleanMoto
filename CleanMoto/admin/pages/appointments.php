@@ -10,3 +10,4 @@ if (!isAdmin()) {
     redirect('login.php');
 }
 
+$db = Database::getInstance()->getConnection();
