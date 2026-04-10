@@ -12,3 +12,4 @@ if (!isAdmin()) {
 
 $db = Database::getInstance()->getConnection();
 
+// Handle AJAX requests
