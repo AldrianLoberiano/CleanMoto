@@ -9,3 +9,4 @@ if (!isLoggedIn()) {
 if (!isAdmin()) {
     redirect('login.php');
 }
+
