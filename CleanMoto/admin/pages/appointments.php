@@ -40,3 +40,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     
     // Custom date range
     if (!empty($dateFrom) && !empty($dateTo)) {
+        $whereConditions[] = "DATE(a.appointment_date) BETWEEN :dateFrom AND :dateTo";
