@@ -22,3 +22,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     $searchQuery = $_GET['search'] ?? '';
     $dateFrom = $_GET['from'] ?? '';
     $dateTo = $_GET['to'] ?? '';
+    
