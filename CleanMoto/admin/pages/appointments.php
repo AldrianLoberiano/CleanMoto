@@ -32,3 +32,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         $whereConditions[] = "DATE(a.appointment_date) = CURDATE()";
     } elseif ($periodFilter === 'week') {
         $whereConditions[] = "a.appointment_date >= DATE_SUB(CURDATE(), INTERVAL 7 DAY)";
+    } elseif ($periodFilter === 'month') {
