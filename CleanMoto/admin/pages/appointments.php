@@ -34,3 +34,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         $whereConditions[] = "a.appointment_date >= DATE_SUB(CURDATE(), INTERVAL 7 DAY)";
     } elseif ($periodFilter === 'month') {
         $whereConditions[] = "a.appointment_date >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH)";
+    } elseif ($periodFilter === 'year') {
