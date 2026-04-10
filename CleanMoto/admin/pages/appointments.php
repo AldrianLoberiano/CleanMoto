@@ -30,3 +30,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     // Period filter
     if ($periodFilter === 'today') {
         $whereConditions[] = "DATE(a.appointment_date) = CURDATE()";
+    } elseif ($periodFilter === 'week') {
