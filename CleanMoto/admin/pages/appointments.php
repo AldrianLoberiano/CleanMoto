@@ -57,3 +57,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         $params[':search'] = "%$searchQuery%";
         $params[':search2'] = "%$searchQuery%";
         $params[':search3'] = "%$searchQuery%";
+    }
